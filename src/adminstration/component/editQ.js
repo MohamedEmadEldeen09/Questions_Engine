@@ -49,7 +49,7 @@ function EditQ({isLogin}) {
 
   const updateQ = useMutation(updateQuestion , {
     onSuccess : (data)=>{
-      route('/questions')
+      route('/Questions_Engine/questions')
     }
   })
 

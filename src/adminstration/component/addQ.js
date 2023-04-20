@@ -21,7 +21,7 @@ const addNew = useMutation(async (question)=>{
 return (await axios.post(questions_url , question )).data
 }, {
   onSuccess : ()=>{
-    route('/questions')
+    route('/Questions_Engine/questions')
   }
 })
 

@@ -105,7 +105,7 @@ function Questions({isLogin , questions}) {
      <div className="controller">
        <button onClick={handleDelete} disabled={!isLogin} className="controller-icon">
          <i className='bx bxs-trash' id={question.id}></i></button> 
-       <Link  to={"/editQ/" + question.id} className="controller-icon">
+       <Link  to={"/Questions_Engine/editQ/" + question.id} className="controller-icon">
          <i className='bx bxs-edit-alt' id={question.id}></i></Link> 
      </div>
    </section>

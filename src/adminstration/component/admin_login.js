@@ -25,7 +25,7 @@ function admin_login() {
     return
   }else{   
     dispatch(set_adminLogin(adminInf[0]))
-    route("/questions")
+    route("/Questions_Engine/questions")
   } 
  }
 
@@ -35,7 +35,7 @@ if(error){
    <h4>
     there is some thing wrong -
     {error.message} -
-    <Link to="/" >try agin</Link> 
+    <Link to="/Questions_Engine" >try agin</Link> 
    </h4>
   )
 }  

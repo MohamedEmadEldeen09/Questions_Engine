@@ -5,17 +5,17 @@ function Admin_header({isLogin , current_Admin}) {
   return (
     <>
     <header className="main_header">
-      <Link to="/questions">
+      <Link to="/Questions_Engine/questions">
         <h1>
           &lt; Codvanced /&gt;
         </h1> 
       </Link>
       <div className="profile_admin">
-          { isLogin ? <Link to="/profile_admin" title="profile">
+          { isLogin ? <Link to="/Questions_Engine/profile_admin" title="profile">
               <label className="admin_name">{current_Admin.name}</label>        
               <i className='bx bx-user-pin'></i>
            </Link> :
-            <Link to="/admin_login">
+            <Link to="/Questions_Engine/admin_login">
               <button className="btn_login">log in</button>
             </Link>
           }         
@@ -23,8 +23,8 @@ function Admin_header({isLogin , current_Admin}) {
      </header>
      <div className="container_admin">
               <header className="header_admin">
-                  <Link to="/questions">Questions</Link>
-                  <Link to="/addQ">Add</Link>
+                  <Link to="/Questions_Engine/questions">Questions</Link>
+                  <Link to="/Questions_Engine/addQ">Add</Link>
               </header>
               <hr/>
           <main className="main_admin">

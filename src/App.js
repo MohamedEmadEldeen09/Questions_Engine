@@ -26,20 +26,20 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/"  
+          <Route path="/Questions_Engine"  
             element={<Admin_header isLogin={isLogin} current_Admin={current_Admin} />}>             
               <Route exact index element={<Questions questions={questions} 
               isLogin={isLogin}/>}/>       
-              <Route path="/questions"  
+              <Route path="/Questions_Engine/questions"  
               element={<Questions questions={questions} isLogin={isLogin}/>}/>
-              <Route exact path="/editQ/:Qid"  
+              <Route exact path="/Questions_Engine/editQ/:Qid"  
               element={<EditQ questions={questions} isLogin={isLogin}/>}/>
-              <Route exact path="/addQ"  
+              <Route exact path="/Questions_Engine/addQ"  
               element={<AddQ  isLogin={isLogin}/>}/>
-              <Route exact path="/profile_admin"  
+              <Route exact path="/Questions_Engine/profile_admin"  
               element={<Profile isLogin={isLogin} 
               current_Admin={current_Admin}/>}/>
-              <Route exact path="/admin_login"  
+              <Route exact path="/Questions_Engine/admin_login"  
               element={<Admin_login isLogin={isLogin}/>}/>
           </Route>        
           <Route  path="*"  element={<Not_found />}/>  
